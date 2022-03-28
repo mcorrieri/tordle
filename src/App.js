@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Center from "./Components/Center";
+import SettingsIcon from "@mui/icons-material/Settings";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Nav-bar">
+        <div className="menu-left">
+          <DensityMediumIcon />
+          <HelpOutlineIcon />
+        </div>
+        <div className="title">TURDLE</div>
+        <div className="menu-right">
+          <BarChartIcon />
+          <SettingsIcon />
+        </div>
+      </div>
     </div>
   );
 }
